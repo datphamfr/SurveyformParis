@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Judson&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="survey.css">
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>  
+<body>
+  <main>
+    <h1 id="title">Tourist Survey - PARIS 2019</h1>
+    <div id="form-outer">
+  <p id="description"><strong>
+    Help us obtain the best results by filling out this survey.</strong>
+  </p>
+  <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+   
+   <div class="rowTab">
+      <div class="labels">
+        <label><strong>Where are you from?</strong></label>
+      </div>
+      <div class="rightTab">
+      <select id="dropdown" name="currentPos" class="dropdown">
+        <option disabled selected value>Select an option</option>
+        <option value="Europe">Europe</option>
+        <option value="Asia">Asia</option>
+        <option value="North America">North America</option>
+        <option value="Sounth America">South America</option>
+        <option value="Australia">Australia</option>
+      </select>
+      </div>
+    </div>
+    
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="userRating"><strong> DO YOU WANT TO RETURN TO PARIS AFTER YOUR TRIP?</strong></label>
+      </div>
+      <div class="rightTab">
+        <ul>
+          <li class="radio"><label>Yes<input name="radio-button" value="1" type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>No<input name="radio-button" value="2" type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>I DO NOT KNOW<input name="radio-button" value="3" type="radio" class="userRatings" ></label></li>
+        </ul>
+      </div>
+    </div>
+    
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="ticket-purchase"><strong>HOW DID YOU GO TO PARIS?</strong></label>
+      </div>
+      <div class="rightTab">
+        <select id="ticket-purchase" name="ticketPurchase" class="dropdown">
+          <option disabled selected value>Select an option</option>
+          <option value="By Plane">By Plane</option>
+          <option value="By Train">by Train</option>
+          <option value="By Bus">By Bus</option>
+          <option value="Blablacar">Blablacar</option>
+          <option value="Private car">Private car</option>
+        </select>
+      </div>
+    </div>
+    
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="preferences"><strong>What did you visit in Paris?</strong></label>
+      </div>
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings"><strong>Eiffel Tower</strong></label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings"><strong>Notre Dame Cathedral</strong></li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings"><strong>Louvre Museum</strong></label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings"><strong>Champs Elysées / Arc of Triumph</strong></label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings"><strong>Montmartre- Square of Tertre</strong></label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings"><strong>Palace of Versailles</strong></label></li>
+          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings"><strong>Luxembourg park</strong></label></li>
+          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings"><strong>Moulin Rouge</strong></label></li>
+          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings"><strong>Disneyland Paris</strong></label></li>
+          
+        </ul>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name"><strong>* Name: </strong></label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email"><strong>* Email: </strong></label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age"><strong>* Age: </strong></label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="110" class="input-field" placeholder="Age">
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments"><strong>Please leave a comment or suggestion</strong></label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+    
+    </form>
+    </div>
